@@ -1,0 +1,362 @@
+@charset "ISO-8859-1";
+* {
+    box-sizing: border-box;
+    font-size: 12px;
+    font-size: inherit;
+    font: inherit;
+}
+* {
+	
+    -ms-scrollbar-track-color: #FAFAFA;
+    -ms-scrollbar-face-color: white;
+    -ms-scrollbar-arrow-color: #FAFAFA;
+    -ms-scrollbar-shadow-color:#DCDCDC;
+    -ms-scrollbar-3dlight-color:#DCDCDC;
+}
+body {
+    background-color: #FEFEFE !important;
+}
+html {
+    height: 100%;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: buttontext;
+    background-color: #FFFCFC;
+    height: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+td, tr {
+    vertical-align: top;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+img {
+    vertical-align: middle;
+    border: none;
+}
+form {
+    display: inline;
+    margin: 0;
+}
+/* everything */
+
+.everything {
+    border: 1px solid #CFCFCF;
+    color: #969696;
+    position: relative;
+    padding: 2px 10px;
+    width: 200px !important;
+    left: -11px;
+    height: 28px;
+    margin-top: 4px;
+    margin-bottom: -1px;
+}
+.everything_icon {
+    position: absolute;
+    top: -5px;
+    width 16px;
+    height: 16px;
+    left: -36px;
+}
+/* everything end */
+
+/* favorite_bar*/
+
+.favorite_item {
+    cursor: pointer;
+}
+.favorite_bar {
+    padding: 3px 0;
+}
+/* favorite_bar end */
+
+/* address_bar */
+
+.address_bar {
+    width: 98% !important;
+    margin-top: 4px;
+    margin-bottom: -1px;
+}
+.address_bar_input {
+    height: 28px;
+    border: 1px solid #CFCFCF;
+    margin-bottom: 0px;
+}
+/* address_bar end */
+
+/* tabplus */
+
+.tab_background {
+    background-color: #EBEBEB;
+    position: relative;
+}
+.tab, .tab2, .tab3, .activetab {
+    cursor: pointer !important;
+    margin: 0;
+    padding: 0 8px;
+    color: #000;
+    background-color: #FBFBFB !important;
+    height: 2.3em;
+    outline: 0;
+    background: white;
+    z-index: 9999;
+    vertical-align: bottom;
+    position: relative;
+    border-left: #DDDDDD 1px solid;
+    border-top: #EBEBEB 1px solid;
+    border-bottom: #EBEBEB 1px solid;
+    border-radius: 8px;
+    /*border-top-right-radius: 8px;*/
+}
+.tab3 {
+    border-right: #DDDDDD 1px solid;
+}
+.tab:hover, .tab2:hover, .tab3:hover {
+    background-color: #DDDDDD !important;
+}
+.activetab {
+    background-color: white !important;
+}
+/* tabplus end */
+
+/* botoom-bar */
+
+#countbar, #size_statusbar {
+    color: #1E395B;
+}
+/* botoom-bar end */
+
+.toolbar-item {
+    cursor: pointer !important;
+}
+.simple_tool {
+    width: 24px;
+    height: 24px;
+    size: containner;
+}
+
+.tool_button{
+    text-align: center;
+    padding: 1px;
+}
+
+.tool_button:hover{
+    /*box-shadow: 1px 1px 1px #888888;*/
+      box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.button {
+    display: inline-block;
+    padding: 1px 1px;
+    text-decoration: none;
+    cursor: default;
+    outline: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    color:#545454;
+}
+.hoverbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    cursor: default;
+    background-color: #E5EBEF;
+    border: 1px solid #7F9DB9;
+    padding: 0;
+    outline: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+/* menu */
+
+.menu-background {
+    background-color: #FAFBFB;
+}
+.menu {
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    color: #3C3C3C;
+    cursor: default;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 23px;
+}
+.hovermenu {
+    display: inline-block;
+    width: 55px;
+    cursor: default;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #3C3C3C;
+    background-color: #FDFDFF;
+    border: 1px solid #D9D9D9;
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 21px;
+}
+/* menu end */
+
+.toolbar1 {
+    display: none;
+    margin: 1px 1px 1px 0;
+    padding: 1px 1px 1px 0;
+    white-space: nowrap;
+    border: none;
+    vertical-align: middle;
+}
+.toolbar2 {
+    display: none;
+    margin: 1px 1px 1px 0;
+    padding: 1px 1px 1px 0;
+    border: none;
+    width: 100%
+}
+.toolbar3 {
+    display: none;
+    margin: 1px 1px 1px 0;
+    padding: 1px 1px 1px 0;
+    text-align: right;
+    border: none;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+/*toolbar container*/
+
+.layout {
+    background-color: #FEFEFE !important;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1px;
+    border: none;
+    border-collapse: collapse;
+    background-color: white;
+    overflow: hidden;
+}
+.layout:last-child {
+    margin-bottom: 4px;
+
+}
+
+/*toolbar container end*/
+
+#Panel {
+    margin-bottom: 20px;
+}
+#leftsplitter {
+    display: none !important;
+}
+/*content*/
+
+#Background * {}
+/*content end*/
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100%;
+    overflow: hidden;
+}
+.sidebar1 {
+    display: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.sidebar2 {
+    display: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    min-height: 100px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.sidebar3 {
+    display: none;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+}
+.tab0 {
+    list-style: none;
+    margin: 0;
+    padding: 0 1px;
+    cursor: default;
+    position: relative;
+}
+.tab0 li {
+    display: inline;
+    display: inline-block;
+    line-height: 2em;
+    position: relative;
+    white-space: nowrap;
+}
+.treebutton, .treespace {
+    color: #666;
+    font-family: monospace;
+    margin: 0 2px 0 1px;
+    text-decoration: none;
+    cursor: default;
+    vertical-align: middle;
+}
+.treespace {
+    visibility: hidden;
+}
+a.treebutton:hover {
+    color: highlight;
+    text-shadow: 0 0 2px highlight;
+}
+.ok, .apply, .cancel {
+    min-width: 8em;
+}
+.buttons {
+    padding-right: 3px;
+    white-space: nowrap;
+}
+.breadcrumb {
+    color: windowtext;
+    background-color: window;
+    white-space: nowrap;
+}
+.separator {
+    color: gray;
+}
+.splitter {
+    padding: 1px;
+    margin: 0;
+    border: none;
+    width: 0;
+    height: 100%;
+    cursor: e-resize;
+}
+.favicon {
+    height: 12pt;
+}
+.drive {
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    font-size: 6.75pt;
+    text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+    filter: glow(color=#fff, strength=1);
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TablacusExplorer><Item Name="SevenZip (7-zip)" Path="7-zip*.dll" Filter="*.7z;*.zip" Extract="x %archive% -o&quot;%path%&quot; %items%" Add="a %archive% &quot;%path%\&quot; %items%" Delete="d %archive% %items%"/><Item Name="Zip" Path="zip*j.dll" Filter="*.zip" Extract="" Add="-r %archive% &quot;%path%\&quot; %items%" Delete="-d %archive% &quot;%path%\&quot; %items%"/></TablacusExplorer>

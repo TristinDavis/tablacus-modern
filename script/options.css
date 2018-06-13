@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+@import url("index.css");
+select {
+    min-height: 1.7em;
+}
+*{
+	color:  #313233;
+	border-color: #CFCCCC !important;
+	text-decoration: none;
+	border-width: 0.1px;
+}
+
+#SortButton{
+    display: none !important;
+}
+input[type="button"]{
+    background-color: white;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+    box-shadow: none;
+    text-shadow: none;
+    border: 1px solid transparent;
+    border-color: #ADADAD;
+    text-align: center;
+    overflow: all;
+    border-radius: 6px;
+    height: 32px;
+}
+input[type="button"]:focus {
+    outline: none;
+}
+input[type="text"] ,textarea,select{
+    border: 1px solid #ced4da;
+    padding: 6px;
+    line-height: 1.5;
+    min-height: 1.4em;
+}
+select::-ms-expand {
+    display: none;
+}
+.panel {
+    border: 1px solid buttonshadow;
+    padding: 4px;
+    display: none;
+    width: 100%;
+    line-height: 1.5em;
+    overflow-y: auto;
+    clear: both;
+}
+.color {
+    border: 1px solid #7F9DB9;
+    width: 2em;
+}
+.block {
+    padding: 8px;
+    border: 1px solid gray;
+    margin-bottom: 8px;
+    display: block;
+}
+.group {
+    padding: 8px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 8px;
+    display: none;
+}
+.groupbutton {
+    width: 100%;
+}
+.oddline {
+    color: #000;
+    background-color: #ddd;
+}
+.color {
+    border-radius: 2px;
+}
+.window {
+    border: 1px solid buttonshadow;
+}
+.window td {
+    border: 1px solid buttonshadow;
+}
+.footer {
+    width: 100%;
+    line-height: 1.5em
+}
+.text1 {
+    color: windowtext;
+    background-color: window;
+    border: 1px solid buttonshadow;
+    white-space: nowrap;
+}
+.img1 {
+    max-width: 1.333em;
+    max-height: 1.333em;
+}
