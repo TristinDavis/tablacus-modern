@@ -48,27 +48,20 @@ form {
     display: inline;
     margin: 0;
 }
-/* everything */
+/*toolbar */
 
-.everything {
-    border: 1px solid #CFCFCF;
-    color: #969696;
-    position: relative;
-    padding: 2px 10px;
-    width: 200px !important;
-    left: -11px;
-    height: 28px;
-    margin-top: 4px;
-    margin-bottom: -1px;
+.toolbar_container {
+    /*background-color: #FF6BB8 !important;*/
+    border-top: 1px solid #DBDBDB;
 }
-.everything_icon {
-    position: absolute;
-    top: -5px;
-    width 16px;
-    height: 16px;
-    left: -36px;
+.toolbar {
+    /*background-color: #FF6BB8 !important;*/
 }
-/* everything end */
+.toolbar_item {
+    margin: 3px;
+}
+.toolbar {}
+/*toolbar end*/
 
 /* favorite_bar*/
 
@@ -94,6 +87,28 @@ form {
 }
 /* address_bar end */
 
+/* everything */
+
+.everything {
+    border: 1px solid #CFCFCF;
+    color: #969696;
+    position: relative;
+    padding: 2px 10px;
+    width: 200px !important;
+    left: -11px;
+    height: 28px;
+    margin-top: 4px;
+    margin-bottom: -1px;
+}
+.everything_icon {
+    position: absolute;
+    top: -5px;
+    width 16px;
+    height: 16px;
+    left: -36px;
+}
+/* everything end */
+
 /* tabplus */
 
 .tab_background {
@@ -104,39 +119,44 @@ form {
     cursor: pointer !important;
     margin: 0;
     padding: 0 8px;
-    color: white;
+    color: #000;
     height: 2.3em;
     outline: 0;
     background: white;
     z-index: 9999;
     vertical-align: bottom;
     position: relative;
-  /*  border-left: #DDDDDD 1px solid;
+    border-left: #DDDDDD 1px solid;
     border-top: #EBEBEB 1px solid;
-    border-bottom: #EBEBEB 1px solid;*/
+    border-bottom: #EBEBEB 1px solid;
     /*border-radius: 8px;*/
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
 .tab, .tab2 {
-    background-color: #9223FA !important;
-    border-right:1px solid #7314CC;
+    background-color: #FBFBFB !important;
+    /*border-right:1px solid #7314CC;*/
 }
 .tab:hover, .tab2:hover {
-    background-color: #690AC2 !important;
+    background-color: #DDDDDD !important;
+}
+.close_btn {
+    padding-left: 5px;
 }
 .new_btn {
-    /*border-right: #DDDDDD 1px solid;*/
-    background-color: #B01754 !important;
+    border-right: #DDDDDD 1px solid;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #FBFBFB !important;
 }
 .new_btn:hover {
-    background-color: #B30721 !important;
+    background-color: #DDDDDD !important;
 }
 .activetab {
-    background-color: #14CC89 !important;
+    background-color: #FFFFFF !important;
 }
 .activetab:hover {
-    background-color: #129666 !important;
+    /*background-color: #DDDDDD !important;*/
 }
 /* tabplus end */
 
@@ -244,13 +264,12 @@ form {
 /*toolbar container*/
 
 .layout {
-    background-color: #FEFEFE !important;
+    background-color: #FEFEFE;
     width: 100%;
     padding: 0;
     margin-bottom: 1px;
     border: none;
     border-collapse: collapse;
-    background-color: white;
     overflow: hidden;
 }
 .layout:last-child {

@@ -154,7 +154,7 @@ if (window.Addon == 1) {
                     }
                     s.push('" >', n.replace(/</g, "&lt;"), '</div></td>');
                     if (this.opt.Close && !FV.Data.Lock) {
-                        s.push('<td style="vertical-align: middle; width: 13px" align="right"><img class="button" src="', this.ImgClose, '" style="width: 13px" id="tabplus_', FV.Parent.Id, '_', i, 'x" title="', this.opt.Tooltips ? GetText("Close Tab") : "", '" onmouseover="MouseOver(this)" onmouseout="MouseOut()"></td>');
+                        s.push('<td class="close_btn" style="vertical-align: middle; width: 13px" align="right"><img  src="', this.ImgClose, '" style="width: 13px" id="tabplus_', FV.Parent.Id, '_', i, 'x" title="', this.opt.Tooltips ? GetText("Close Tab") : "", '" onmouseover="MouseOver(this)" onmouseout="MouseOut()"></td>');
                     }
                 } catch (e) {}
                 s.push('</tr></table>');

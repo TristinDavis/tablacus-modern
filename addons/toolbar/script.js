@@ -139,7 +139,7 @@ if (window.Addon == 1) {
 						var h = EncodeSC(item.getAttribute("Height"));
 						var sh = (h != "" ? ' style="height:' + h + 'px"' : '');
 						h -= 0;
-						img = '<img src="' + EncodeSC(api.PathUnquoteSpaces(ExtractMacro(te, icon))) + '"' + sh + '>';
+						img = '<img class="toolbar_item" src="' + EncodeSC(api.PathUnquoteSpaces(ExtractMacro(te, icon))) + '"' + sh + '>';
 					}
 					s.push('<span id="_toolbar', i, '" ', api.StrCmpI(item.getAttribute("Type"), "Menus") || api.StrCmpI(item.text, "Open") ? 'onclick="Addons.ToolBar.Click(' + i + ')" onmousedown="Addons.ToolBar.Down(' : 'onmousedown="Addons.ToolBar.Open(');
 					s.push(i, ')" oncontextmenu="Addons.ToolBar.Popup(', i, '); return false" onmouseover="MouseOver(this)" onmouseout="MouseOut()" class="tool_button button toolbar-item" title="', EncodeSC(ExtractMacro(te, item.getAttribute("Name"))), '">', img, '</span>');
