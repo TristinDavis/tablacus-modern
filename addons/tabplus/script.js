@@ -36,7 +36,7 @@ if (window.Addon == 1) {
                             this.Tab(s, TC, i);
                         }
                         if (this.opt.New) {
-                            s.push('<li class="tab3" onclick="Addons.TabPlus.New(', Id, ');return false" title="', this.opt.Tooltips ? GetText("New Tab") : "", '"');
+                            s.push('<li class="new_btn" onclick="Addons.TabPlus.New(', Id, ');return false" title="', this.opt.Tooltips ? GetText("New Tab") : "", '"');
                             if (this.opt.Align > 1 && this.opt.Width) {
                                 s.push(' style="text-align: center; width: 100%"');
                             }
@@ -87,12 +87,7 @@ if (window.Addon == 1) {
             }
         },
         New: function(Id) {
-            var TC = te.Ctrl(CTRL_TC, Id);
-            if (TC) {
-                var FV = TC.Selected;
-                NavigateFV(FV, HOME_PATH || FV, SBSP_NEWBROWSER);
-                TC.Move(TC.SelectedIndex, TC.Count - 1);
-            }
+        	Exec(te, GetAddress(), "Open in new tab", te.hwnd, null);
         },
         Tab: function(s, TC, i) {
             var FV = TC.Item(i);

@@ -6,12 +6,11 @@
     font: inherit;
 }
 * {
-	
     -ms-scrollbar-track-color: #FAFAFA;
     -ms-scrollbar-face-color: white;
     -ms-scrollbar-arrow-color: #FAFAFA;
-    -ms-scrollbar-shadow-color:#DCDCDC;
-    -ms-scrollbar-3dlight-color:#DCDCDC;
+    -ms-scrollbar-shadow-color: #DCDCDC;
+    -ms-scrollbar-3dlight-color: #DCDCDC;
 }
 body {
     background-color: #FEFEFE !important;
@@ -101,32 +100,43 @@ form {
     background-color: #EBEBEB;
     position: relative;
 }
-.tab, .tab2, .tab3, .activetab {
+.tab, .tab2, .new_btn, .activetab {
     cursor: pointer !important;
     margin: 0;
     padding: 0 8px;
-    color: #000;
-    background-color: #FBFBFB !important;
+    color: white;
     height: 2.3em;
     outline: 0;
     background: white;
     z-index: 9999;
     vertical-align: bottom;
     position: relative;
-    border-left: #DDDDDD 1px solid;
+  /*  border-left: #DDDDDD 1px solid;
     border-top: #EBEBEB 1px solid;
-    border-bottom: #EBEBEB 1px solid;
-    border-radius: 8px;
-    /*border-top-right-radius: 8px;*/
+    border-bottom: #EBEBEB 1px solid;*/
+    /*border-radius: 8px;*/
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
 }
-.tab3 {
-    border-right: #DDDDDD 1px solid;
+.tab, .tab2 {
+    background-color: #9223FA !important;
+    border-right:1px solid #7314CC;
 }
-.tab:hover, .tab2:hover, .tab3:hover {
-    background-color: #DDDDDD !important;
+.tab:hover, .tab2:hover {
+    background-color: #690AC2 !important;
+}
+.new_btn {
+    /*border-right: #DDDDDD 1px solid;*/
+    background-color: #B01754 !important;
+}
+.new_btn:hover {
+    background-color: #B30721 !important;
 }
 .activetab {
-    background-color: white !important;
+    background-color: #14CC89 !important;
+}
+.activetab:hover {
+    background-color: #129666 !important;
 }
 /* tabplus end */
 
@@ -145,17 +155,14 @@ form {
     height: 24px;
     size: containner;
 }
-
-.tool_button{
+.tool_button {
     text-align: center;
     padding: 1px;
 }
-
-.tool_button:hover{
+.tool_button:hover {
     /*box-shadow: 1px 1px 1px #888888;*/
-      box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
-
 .button {
     display: inline-block;
     padding: 1px 1px;
@@ -164,7 +171,7 @@ form {
     outline: 0;
     white-space: nowrap;
     vertical-align: middle;
-    color:#545454;
+    color: #545454;
 }
 .hoverbutton {
     display: inline-block;
@@ -248,9 +255,7 @@ form {
 }
 .layout:last-child {
     margin-bottom: 4px;
-
 }
-
 /*toolbar container end*/
 
 #Panel {
