@@ -12,6 +12,27 @@
     -ms-scrollbar-shadow-color: #DCDCDC;
     -ms-scrollbar-3dlight-color: #DCDCDC;
 }
+
+.fa{
+    display: flex;
+}
+
+.test{
+    flex: 1;
+    width:10%;
+    background-color: yellow;
+    color:blue;
+    height:10%;
+    display: inline-block;
+}
+
+
+.client{
+    flex: 1;
+    float: right;
+    width:20%;
+    display: inline-block;
+}
 body {
     background-color: #FEFEFE !important;
 }
